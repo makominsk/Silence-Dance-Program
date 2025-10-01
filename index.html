@@ -148,6 +148,21 @@
         .hamburger .bar { display: block; width: 25px; height: 3px; margin: 5px auto; background-color: var(--heading-color); transition: all 0.3s ease-in-out; }
 
         /* ------------------- */
+        /*  Социальные сети и контакты */
+        /* ------------------- */
+        .phone-number {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .phone-number:hover {
+            color: var(--accent-color);
+        }
+
+        /* ------------------- */
         /*  Главный раздел (Hero) */
         /* ------------------- */
         .hero {
@@ -392,6 +407,10 @@
                 margin: 0 auto;
             }
             .logo-text { font-size: 1.2rem; letter-spacing: 0.5px;}
+            .phone-number {
+                font-size: 0.85rem;
+                white-space: nowrap;
+            }
             .nav-links { position: fixed; top: var(--header-height); right: -100%; width: 100%; height: calc(100vh - var(--header-height)); background-color: var(--bg-color); flex-direction: column; align-items: center; justify-content: center; gap: 40px; transition: right 0.4s ease-in-out; }
             .nav-links.active { right: 0; }
             .nav-links a { font-size: 1.5rem; }
@@ -408,6 +427,13 @@
     <header class="header">
         <nav class="navbar container">
             <a href="#hero" class="logo-text">Silence Dance Program</a>
+
+            <div class="phone-number">
+                <a href="tel:+375336229440" class="phone-number">
+                    +375 33 622 9440
+                </a>
+            </div>
+
             <ul class="nav-links">
                 <li><a href="#about">О программе</a></li>
                 <li><a href="#teachers">Педагоги</a></li>
