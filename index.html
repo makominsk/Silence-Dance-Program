@@ -348,9 +348,27 @@
             transition: transform 0.3s ease;
         }
         .schedule-group:hover { transform: translateY(-5px); }
-        .schedule-item { padding: 15px 0; border-bottom: 1px solid var(--secondary-bg-color); }
+        .schedule-item {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--secondary-bg-color);
+            transition: all 0.3s ease;
+            position: relative;
+        }
         .schedule-item:last-child { border-bottom: none; }
-        .schedule-item strong { display: block; color: var(--heading-color); font-weight: 600; font-size: 1.1rem; }
+        .schedule-item strong {
+            display: block;
+            color: var(--heading-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        .schedule-item:hover {
+            background-color: rgba(255, 107, 53, 0.1);
+            transform: translateX(10px);
+        }
+        .schedule-item:hover strong {
+            color: var(--accent-color);
+        }
         
         .schedule-address {
             text-align: center;
