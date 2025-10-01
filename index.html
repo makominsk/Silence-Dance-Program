@@ -355,10 +355,27 @@
         .schedule-address {
             text-align: center;
             padding: 20px;
-            background-color: var(--bg-color);
+            background-color: transparent;
+            border: 2px solid var(--accent-color);
             border-radius: 8px;
+            color: var(--text-color);
+            transition: all 0.3s ease;
         }
-        .schedule-address h4 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 10px; }
+        .schedule-address:hover {
+            background-color: var(--accent-color);
+            color: var(--dark-text-color);
+            box-shadow: 0 4px 10px rgba(255, 107, 53, 0.3);
+        }
+        .schedule-address h4 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+            transition: color 0.3s ease;
+        }
+        .schedule-address:hover h4 {
+            color: var(--dark-text-color);
+        }
         
         /* ------------------- */
         /*  Подвал (Footer) */
@@ -586,27 +603,27 @@
                     <div class="schedule-group">
                         <h3>Взрослые 18+</h3>
                          <div class="schedule-item">
-                            <strong>Пн, 21:00-22:30</strong>
+                            <strong>Понедельник 21:00 - 22:30</strong>
                             <span>Техника (начин./средний)</span>
                         </div>
                          <div class="schedule-item">
-                            <strong>Вт, 21:00-22:30</strong>
+                            <strong>Вторник 21:00 - 22:30</strong>
                             <span>Растяжка (все уровни)</span>
                         </div>
                          <div class="schedule-item">
-                            <strong>Ср, 21:00-22:30</strong>
+                            <strong>Среда 21:00 - 22:30</strong>
                             <span>Техника (Про)</span>
                         </div>
                         <div class="schedule-item">
-                            <strong>Чт, 19:30 / 21:00</strong>
+                            <strong>Четверг 19:30 - 21:00</strong>
                             <span>Классический танец</span>
                         </div>
                          <div class="schedule-item">
-                            <strong>Чт, 21:00-22:30</strong>
+                            <strong>Четверг 21:00 - 22:30</strong>
                             <span>Импровизация (начин./средний)</span>
                         </div>
                          <div class="schedule-item">
-                            <strong>Пт, 21:00-22:30</strong>
+                            <strong>Пятница 21:00 - 22:30</strong>
                             <span>Импровизация (Про)</span>
                         </div>
                     </div>
