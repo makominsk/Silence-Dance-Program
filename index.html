@@ -291,6 +291,46 @@
             opacity: 1;
         }
 
+        .additional-disciplines {
+            text-align: center;
+            padding: 20px;
+            background-color: transparent;
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            margin-top: 30px;
+        }
+        .additional-disciplines:hover {
+            background-color: var(--accent-color);
+            color: var(--dark-text-color);
+            box-shadow: 0 4px 10px rgba(255, 107, 53, 0.3);
+        }
+        .additional-disciplines h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+            transition: color 0.3s ease;
+        }
+        .additional-disciplines:hover h3 {
+            color: var(--dark-text-color);
+        }
+        .additional-disciplines ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .additional-disciplines li {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .additional-disciplines li:last-child {
+            margin-bottom: 0;
+        }
+
         /* ------------------- */
         /*  Раздел "Педагоги" */
         /* ------------------- */
@@ -335,7 +375,7 @@
             margin: 0 auto;
             align-items: start;
         }
-        
+
         .schedule-column {
             display: flex;
             flex-direction: column;
@@ -441,6 +481,7 @@
                 max-width: 300px;
                 margin: 0 auto;
             }
+
             .logo-text { font-size: 1.2rem; letter-spacing: 0.5px;}
             .phone-number {
                 font-size: 0.85rem;
@@ -532,6 +573,7 @@
                         <li>теоретические дисциплины</li>
                     </ul>
                 </div>
+
             </div>
         </section>
 
@@ -565,7 +607,7 @@
                         <div class="teacher-info">
                             <h3>Злотникова Светлана</h3>
                             <h4>Классический танец и растяжка</h4>
-                            <p>Педагог, артист, хореограф.</p>
+                            <p>Педагог, артист, хореограф</p>
                             <ul>
                                 <li>Образование: Гомельский колледж искусств им. Н.Ф. Соколовского</li>
                                 <li>Экс-артист Государственного академического ансамбля танца Беларуси</li>
@@ -580,7 +622,7 @@
                         </div>
                         <div class="teacher-info">
                             <h3>Блоцкая Анастасия</h3>
-                            <h4>педагог по технике floor work, ведущая танцевальных джемов</h4>
+                            <h4>Педагог по технике floor work, ведущая танцевальных джемов</h4>
                             <p>Танцор, педагог, хореограф, брейдер. Руководитель группы «Lirios art group».</p>
                             <ul>
                                 <li>Образование: Гродненский колледж искусств и БГУКИ по специальности «Хореографическое искусство»</li>
@@ -618,9 +660,16 @@
                             <strong>Тимирязева 9, к 10:</strong><br>
                             Все остальные взрослые группы</p>
                         </div>
+                        <div class="additional-disciplines">
+                            <h3>Дополнительные дисциплины</h3>
+                            <ul>
+                                <li>Один раз в месяц танцевальные джемы</li>
+                                <li>Два раза в месяц лекции по истории хореографии и театра и просмотр спектаклей</li>
+                                <li>Один раз в месяц приглашенные педагоги в рамках расписания групп</li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <!-- Правая колонка -->
                     <div class="schedule-group">
                         <h3>Взрослые 16+</h3>
                          <div class="schedule-item">
@@ -635,7 +684,7 @@
                             <strong>Среда 21:00 - 22:30</strong>
                             <span>Техника (Про)</span>
                         </div>
-                        <div class="schedule-item">
+                         <div class="schedule-item">
                             <strong>Четверг 19:30 - 21:00</strong>
                             <span>Классический танец (1 группа)</span>
                         </div>
@@ -653,9 +702,10 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
-        
+
     </main>
     
     <footer class="footer">
