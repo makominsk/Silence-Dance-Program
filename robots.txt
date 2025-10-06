@@ -11,4 +11,4 @@ Allow: /images/
 Allow: /videos/
 
 # Sitemap
-Sitemap: https://silence-dance-program.com/sitemap.xml
+Sitemap: https://makominsk.github.io/Silence-Dance-Program/sitemap.xml
