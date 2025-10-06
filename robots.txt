@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Запрет на сканирование технических файлов
+Disallow: /memory-bank/
+Disallow: /*.log
+Disallow: /private/
+
+# Разрешение на сканирование изображений и видео
+Allow: /images/
+Allow: /videos/
+
+# Sitemap
+Sitemap: https://silence-dance-program.com/sitemap.xml
