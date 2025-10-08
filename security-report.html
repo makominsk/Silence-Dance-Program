@@ -79,6 +79,33 @@
         li {
             margin: 5px 0;
         }
+        .map-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .map-card {
+            display: block;
+            text-decoration: none;
+            background: #fff6f1;
+            border: 1px solid #ffceb5;
+            border-radius: 8px;
+            padding: 20px;
+            color: #333;
+            box-shadow: 0 2px 8px rgba(255, 107, 53, 0.15);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .map-card h3 {
+            margin: 0 0 10px;
+            color: #ff6b35;
+        }
+        .map-card p {
+            margin: 0;
+        }
+        .map-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px rgba(255, 107, 53, 0.25);
+        }
     </style>
 </head>
 <body>
@@ -249,6 +276,20 @@ Referrer-Policy: strict-origin-when-cross-origin;
             <div style="text-align: center; padding: 20px; background-color: #d4edda; border-radius: 8px; margin: 20px 0;">
                 <h3 style="color: #155724; margin: 0;">🎉 ОЦЕНКА: ВЫСОКИЙ УРОВЕНЬ БЕЗОПАСНОСТИ</h3>
                 <p style="margin: 10px 0 0 0; color: #155724;">Сайт безопасен для использования и требует минимальных улучшений</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📍 Локации на Яндекс.Картах</h2>
+            <div class="map-grid">
+                <a class="map-card" href="https://yandex.ru/maps/?mode=search&amp;text=%D0%A5%D0%BE%D1%80%D1%83%D0%B6%D0%B5%D0%B9%203%20%D0%9C%D0%B8%D0%BD%D1%81%D0%BA" target="_blank" rel="noopener noreferrer">
+                    <h3>Минск, ул. Хоружей, 3</h3>
+                    <p>Открыть на Яндекс.Картах в новом окне</p>
+                </a>
+                <a class="map-card" href="https://yandex.ru/maps/?mode=search&amp;text=%D0%A2%D0%B8%D0%BC%D0%B8%D1%80%D1%8F%D0%B7%D0%B5%D0%B2%D0%B0%209%20%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%2010%20%D0%9C%D0%B8%D0%BD%D1%81%D0%BA" target="_blank" rel="noopener noreferrer">
+                    <h3>Минск, ул. Тимирязева, 9 корпус 10</h3>
+                    <p>Открыть на Яндекс.Картах в новом окне</p>
+                </a>
             </div>
         </div>
     </div>
